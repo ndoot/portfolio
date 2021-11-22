@@ -35,8 +35,12 @@ code {
 }
 
 .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   min-height: 100vh;
   max-height: 100vh;
+  margin: auto;
   width: 100%;
   overflow: auto;
 }
@@ -84,7 +88,7 @@ code {
 }
 
 .container {
-  margin:30px;
+  flex: 1;
 }
 
 h1 {
