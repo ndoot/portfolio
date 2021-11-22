@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import '../App.css';
 const Info = ({ name, image, byline, email, description, github, linkedin }) => {
   return (
-    <div class = "prof">
-      <img src={image} className="pfp" alt="profile"/>
+    <div className = "sideNav">
+      <img src={image} className="profPic" alt="profile"/>
       <div className = "profName">{name}</div>
       <div className = "profByline">{byline}</div>
       <div className = "profDesc">{description}</div>
@@ -21,8 +21,6 @@ const Info = ({ name, image, byline, email, description, github, linkedin }) => 
           </svg>
         </a>
       </div>
-      
-
     </div>
   )
 };
