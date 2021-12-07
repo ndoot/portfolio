@@ -70,3 +70,31 @@
 .projects-title {
   margin-top: 0;
 }
+
+.projects-grid {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.project {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.project > * {
+  width: inherit;
+}
+.project-img {
+  padding: auto;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.project-title {
+  margin: 5px 0 5px 0;
+}
+
+.project-desc {
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+}

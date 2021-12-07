@@ -5,6 +5,8 @@ import './App.css';
 import GitHub from './images/GitHub.svg';
 import LinkedIn from './images/LinkedIn.svg';
 import Email from './images/Email.svg';
+import ASL from './images/ASL.png';
+import Project from './components/Project';
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -15,7 +17,7 @@ function App() {
         THREE: THREE,
         minHeight: 200.00,
         minWidth: 200.00,
-
+        zoom: 0.5,
         highlightColor: 0xffc300,
         midtoneColor: 0xff1f00,
         lowlightColor: 0x2d00ff,
@@ -47,7 +49,19 @@ function App() {
         </div>
       </div>
       <div className = "container">
-        <h2 className = "projects-title">Projects</h2>
+        <section name = "projects">
+          <h2 className = "projects-title">Projects</h2>
+          <div className = "projects-grid">
+            <Project imgSrc = {ASL} title = "Live ASL Translator" 
+              desc = "This bot uses OpenCV and Tensorflow to detect and classify American Sign Language characters.">
+            </Project>
+            <Project></Project>
+            <Project></Project>
+          </div>
+        </section>
+        <section name = "skills">
+        < h2 className = "skills-title">Skills</h2>
+        </section>
       </div>
     </main>
   );
