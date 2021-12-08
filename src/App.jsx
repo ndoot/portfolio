@@ -1,11 +1,12 @@
 import * as THREE from 'three';
 import FOG from 'vanta/dist/vanta.fog.min.js';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import GitHub from './images/GitHub.svg';
 import LinkedIn from './images/LinkedIn.svg';
 import Email from './images/Email.svg';
 import ASL from './images/ASL.png';
+import airbnb from './images/airbnb.png';
 import website from './images/website.jpg'
 import Project from './components/Project';
 
@@ -42,9 +43,9 @@ function App() {
               <p>Interested? Feel free to download my <a href = "www.google.com">resume</a> and check out my projects below!</p>
             </div>
             <div className = "info-links">
-              <a href = "https://github.com/ndoot" target='_blank'><img src = {GitHub}></img></a>
-              <a href = "https://www.linkedin.com/in/neel-dutta-profile/" target='_blank'><img src = {LinkedIn}></img></a>
-              <a href = "https://www.linkedin.com/in/neel-dutta-profile/" target='_blank'><img src = {Email}></img></a>
+              <a href = "https://github.com/ndoot" target='_blank' rel = 'noreferrer'><img src = {GitHub} alt = "Github"></img></a>
+              <a href = "https://www.linkedin.com/in/neel-dutta-profile/" target='_blank' rel = 'noreferrer'><img src = {LinkedIn} alt = "LinkedIn"></img></a>
+              <a href = "https://www.linkedin.com/in/neel-dutta-profile/" target='_blank' rel = 'noreferrer'><img src = {Email} alt = "Contact"></img></a>
             </div>
           </div>
         </div>
@@ -52,11 +53,15 @@ function App() {
       <div className = "container">
         <section name = "projects">
           <h2 className = "projects-title">Projects</h2>
-          <p className = "projects-desc">Source code can be found on github. Demos provided upon request.</p>
+          <p className = "projects-desc">Source code (apart from university projects) can be found on github. Demos provided upon request.</p>
           <div className = "projects-grid">
             <Project imgSrc = {ASL} title = "Live ASL Translator" 
               desc = "This project uses Computer Vision (OpenCV + MediaPipe) and Machine Learning (Tensorflow) to detect and classify American Sign Language alphabet characters in real time."
               technologies = {["Python", "TensorFlow"]}>
+            </Project>
+            <Project imgSrc = {airbnb} title = "University Project: AirBnB Clone" 
+              desc = "This uni project uses React and a series of pre-written restful APIs to create a simple functional clone of AirBnB, with login and logout functionality, and the ability to create, search, book, publish and review listings."
+              technologies = {["HTML", "CSS", "JavaScript", "React.js"]}>
             </Project>
             <Project imgSrc = {website} title = "Portfolio" 
               desc = "This website is a simple application built with HTML, CSS, Javascript and React."

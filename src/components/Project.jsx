@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Project({ imgSrc, title, desc, technologies }) {
   return(
     <div className = "project">
-      <img src = {imgSrc} className = "project-img"></img>
+      <img src = {imgSrc} className = "project-img" alt = "Project"></img>
       <h4 className = "project-title">{title}</h4>
       <div>
         {technologies.map((e, idx) => {
