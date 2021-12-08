@@ -6,6 +6,7 @@ import GitHub from './images/GitHub.svg';
 import LinkedIn from './images/LinkedIn.svg';
 import Email from './images/Email.svg';
 import ASL from './images/ASL.png';
+import website from './images/website.jpg'
 import Project from './components/Project';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           <div className = "container">
             <h1 className = "info-title"><b>Hi, I'm Neel!</b></h1>
             <div className = "info-desc">
-              <p>I'm an aspiring software engineer studying Computer Science and Finance at UNSW.</p>
+              <p>I'm an aspiring software engineer studying a double degree in Computer Science and Commerce (Finance) at UNSW.</p>
               <p>Interested? Feel free to download my <a href = "www.google.com">resume</a> and check out my projects below!</p>
             </div>
             <div className = "info-links">
@@ -51,12 +52,16 @@ function App() {
       <div className = "container">
         <section name = "projects">
           <h2 className = "projects-title">Projects</h2>
+          <p className = "projects-desc">Source code can be found on github. Demos provided upon request.</p>
           <div className = "projects-grid">
             <Project imgSrc = {ASL} title = "Live ASL Translator" 
-              desc = "This bot uses OpenCV and Tensorflow to detect and classify American Sign Language characters.">
+              desc = "This project uses Computer Vision (OpenCV + MediaPipe) and Machine Learning (Tensorflow) to detect and classify American Sign Language alphabet characters in real time."
+              technologies = {["Python", "TensorFlow"]}>
             </Project>
-            <Project></Project>
-            <Project></Project>
+            <Project imgSrc = {website} title = "Portfolio" 
+              desc = "This website is a simple application built with HTML, CSS, Javascript and React."
+              technologies = {["HTML", "CSS", "JavaScript", "React.js"]}>
+            </Project>
           </div>
         </section>
         <section name = "skills">
