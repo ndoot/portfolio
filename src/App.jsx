@@ -13,6 +13,7 @@ import crypto from './images/crypto.jpg';
 import Project from './components/Project';
 import Skills from './components/Skills';
 
+// To deploy site: git bash here > npm run deploy
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
   React.useEffect(() => {
