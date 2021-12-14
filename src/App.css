@@ -63,9 +63,14 @@
 .info-links > a {
   margin-right: 10px;
 }
-.info-links > a > img {
+
+.info-links > a > svg {
   width: 36px;
   height: 36px;
+}
+
+.info-links > a > svg:hover {
+  fill:rgb(51, 51, 51)
 }
 
 section {
@@ -203,3 +208,4 @@ a {
 a:hover {
   color: rgb(111, 0, 255);
 }
+
