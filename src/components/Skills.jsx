@@ -6,7 +6,7 @@ function Skills({ heading, skills, type }) {
     <div className = "skills">
       <h3 className='skills-subheading'>{heading} <br></br></h3>
       {skills.map((e, idx) => {
-        return <div key = {idx} className = {"skills-icon " + "skills-" + type }><b>{e}</b></div>
+        return <div key = {idx} className = {"skills-icon skills-" + type }><b>{e}</b></div>
       })}
     </div>
   );

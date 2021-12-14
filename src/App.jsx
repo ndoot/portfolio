@@ -58,7 +58,7 @@ function App() {
             <h2 className = "section-title">Projects</h2>
             <p className = "projects-desc">Live demos provided upon request.</p>
             <div className = "projects-grid">
-              <Project imgSrc = {ASL} title = "Live ASL Translator" 
+              <Project imgSrc = {ASL} title = "Live Sign Language Translator" 
                 demo = "https://www.youtube.com/watch?v=30j52_ApOOY&ab_channel=NeelDutta"
                 desc = "This project uses Computer Vision (OpenCV + MediaPipe) and Machine Learning (Tensorflow) to detect and classify American Sign Language alphabet characters in real time."
                 technologies = {["Python", "TensorFlow ML", "OpenCV", "MediaPipe"]}
