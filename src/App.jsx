@@ -62,7 +62,7 @@ function App() {
           </section>
           <section name = "projects">
             <h2 className = "section-title">Projects</h2>
-            <p className = "projects-desc">Live demos provided upon request.</p>
+            <p className = "projects-desc">Live demos provided upon request. Sign Language Translator repository is private - code provided upon request.</p>
             <div className = "projects-grid">
               <Project imgSrc = {ASL} title = "Live Sign Language Translator" 
                 demo = "https://www.youtube.com/watch?v=30j52_ApOOY&ab_channel=NeelDutta"
