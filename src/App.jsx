@@ -56,9 +56,10 @@ function App() {
           </section>
           <section name = "projects">
             <h2 className = "section-title">Projects</h2>
-            <p className = "projects-desc">Demos provided upon request.</p>
+            <p className = "projects-desc">Live demos provided upon request.</p>
             <div className = "projects-grid">
               <Project imgSrc = {ASL} title = "Live ASL Translator" 
+                demo = "https://www.youtube.com/watch?v=30j52_ApOOY&ab_channel=NeelDutta"
                 desc = "This project uses Computer Vision (OpenCV + MediaPipe) and Machine Learning (Tensorflow) to detect and classify American Sign Language alphabet characters in real time."
                 technologies = {["Python", "TensorFlow ML", "OpenCV", "MediaPipe"]}
                 status='Complete'>
@@ -78,7 +79,7 @@ function App() {
                 technologies = {["Python", "QuantConnect API"]}
                 status='WIP'>
               </Project>
-              <Project imgSrc = {crypto} title = "Crypto Sentiment Analysis Site" 
+              <Project imgSrc = {crypto} title = "Crypto Sentiment Analysis Website" 
                 desc = "Currently working on developing a real-time crypto sentiment analysis website using Sentiment.js to analyse data scraped from Twitter."
                 technologies = {["HTML", "CSS", "JavaScript", "React.js", "AWS"]}
                 status='WIP'>

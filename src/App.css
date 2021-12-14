@@ -195,3 +195,11 @@ section {
   .info-title { font-size: 50px; }
   .section-title {font-size: 40px;}
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(111, 0, 255);
+}
