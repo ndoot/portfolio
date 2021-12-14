@@ -46,7 +46,7 @@ function App() {
             <h1 className = "info-title"><b>Hi, I'm Neel!</b></h1>
             <div className = "info-desc">
               <p>I'm an aspiring software engineer studying a <b>Computer Science/Commerce (Finance)</b> double degree at UNSW.</p>
-              <p>Interested? Feel free to download my <a href = "www.google.com">resume</a> and check out my projects below!</p>
+              <p>Interested? Feel free to download my <a href = "https://drive.google.com/file/d/1HnMCeGEZe9Diz589zrCcMYlMDuwKxaxL/view?usp=sharing" target='_blank' rel = 'noreferrer'>resume</a> and check out my projects below!</p>
             </div>
             <div className = "info-links">
               <a href = "https://github.com/ndoot" target='_blank' rel = 'noreferrer'><img src = {GitHub} alt = "Github"></img></a>
