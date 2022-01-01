@@ -10,6 +10,7 @@ import airbnb from './images/airbnb.png';
 import website from './images/website.jpg';
 import algobot from './images/algobot.jpg';
 import crypto from './images/crypto.jpg';
+import charity from './images/charity.jpg'
 import Project from './components/Project';
 import Skills from './components/Skills';
 
@@ -72,8 +73,13 @@ function App() {
               </Project>
               <Project imgSrc = {airbnb} title = "University Project: AirBnB Clone" 
                 desc = "This uni project uses React and a series of pre-written restful APIs to create a simple functional clone of AirBnB, with login and logout functionality, and the ability to create, search, book, publish and review listings."
-                technologies = {["HTML", "CSS", "JavaScript", "React.js"]}
+                technologies = {["HTML", "CSS", "JavaScript", "React.js", "Node.js"]}
                 status='Complete'>
+              </Project>
+              <Project imgSrc = {charity} title = "Charity Fundraising App" 
+                desc = "Currently working on an app to crowdsource fundraising for charities and their projects."
+                technologies = {["HTML", "CSS", "JavaScript", "React Native", "AWS", "Node.js", "Stripe API"]}
+                status='WIP'>
               </Project>
               <Project imgSrc = {website} title = "Portfolio" 
                 desc = "This website is a simple application built with HTML, CSS, Javascript and React."
@@ -88,7 +94,7 @@ function App() {
               <Project imgSrc = {crypto} title = "Crypto Sentiment Analysis Website" 
                 desc = "Currently working on developing a real-time crypto sentiment analysis website using Sentiment.js to analyse data scraped from Twitter."
                 technologies = {["HTML", "CSS", "JavaScript", "React.js", "AWS"]}
-                status='WIP'>
+                status='Hiatus'>
               </Project>
             </div>
           </section>
